@@ -6,7 +6,7 @@ use Faker\Generator;
 
 abstract class Person
 {
-    private Generator $creator;
+    protected Generator $creator;
 
     public function __construct(Generator $creator)
     {
