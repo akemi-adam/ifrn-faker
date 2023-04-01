@@ -1,0 +1,25 @@
+{
+    "name": "akemi-adam/ifrn-faker",
+    "autoload": {
+        "psr-4": {
+            "AkemiAdam\\IfrnFaker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Akemi Adam",
+            "email": "90357785+akemi-adam@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.21"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
