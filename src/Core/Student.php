@@ -13,6 +13,6 @@ class Student extends Person
 
     public function birthDate() : string
     {
-        return 'pass';
+        return sprintf('%s/%s/%s', $this->creator->dayOfMonth(), $this->creator->month(), $this->creator->year('-16 years'));
     }
 }
