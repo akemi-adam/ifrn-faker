@@ -3,7 +3,7 @@
 namespace AkemiAdam\IfrnFaker;
 
 use AkemiAdam\IfrnFaker\Core\{
-    Student, Campus
+    Student, Campus, Course
 };
 use Faker\{
     Generator, Factory
@@ -34,5 +34,13 @@ final class Faker
     public function campus() : Campus
     {
         return new Campus($this->creator);
+    }
+
+    /**
+     * Returns a course object
+     */
+    public function course() : Course
+    {
+        return new Course($this->creator);
     }
 }
