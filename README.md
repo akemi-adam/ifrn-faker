@@ -88,7 +88,6 @@ Student herda da classe Person e portanto possui seus métodos:
 
 ```
 $faker->student()->name() // Retorna um nome brasileiro aleatório (Um alias para a função name() do PHP-Faker)
-$faker->student()->
 
 $faker->student()->name($gender) // Retorna um nome comum normalmente associado ao gênero passado por parâmetro
 
