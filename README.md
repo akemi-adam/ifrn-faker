@@ -2,6 +2,12 @@
 
 Pacote para gerar dados fictícios para testes no contexto de aplicações para o IFRN
 
+## Instalação
+
+```shell
+composer require akemi-adam/ifrn-faker
+```
+
 ## Testes
 
 Os testes foram construídos em Pest 2, para executá-los, basta usar o comando:
