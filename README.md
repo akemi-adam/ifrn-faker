@@ -15,12 +15,16 @@ Os testes foram construídos em Pest 2, para executá-los, basta usar o comando:
 Para começar a utilizar o pacote, basta chamar uma instância do objeto Faker:
 
 ```
+<?php
+
 $faker = new AkemiAdam\IfrnFaker\Faker;
 ```
 
 A patir desse objeto, é possível chamar os outros objetos que de fato contém os dados fictícios:
 
 ```
+<?php
+
 // Instânciando os objetos
 
 $student = $faker->student();
@@ -51,6 +55,8 @@ Curso Informática para Internet
 Segue a lista com todas as funções que o pacote fornece
 
 ```
+<?php
+
 $faker = new AkemiAdam\IfrnFaker\Faker;
 
 // Campus
@@ -87,6 +93,8 @@ $faker->student()->shift(); // Exemplo: Matutino, Vespertino, Noturno
 Student herda da classe Person e portanto possui seus métodos:
 
 ```
+<?php
+
 $faker->student()->name() // Retorna um nome brasileiro aleatório (Um alias para a função name() do PHP-Faker)
 
 $faker->student()->name($gender) // Retorna um nome comum normalmente associado ao gênero passado por parâmetro
