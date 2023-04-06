@@ -5,14 +5,17 @@
             "AkemiAdam\\IfrnFaker\\": "src/"
         }
     },
+    "description": "A package to generate dummy data in the context of IFRN for testing",
     "authors": [
         {
             "name": "Akemi Adam",
             "email": "90357785+akemi-adam@users.noreply.github.com"
         }
     ],
+    "license": "MIT",
     "require": {
-        "fakerphp/faker": "^1.21"
+        "fakerphp/faker": "^1.21",
+        "php": ">=7.4"
     },
     "require-dev": {
         "pestphp/pest": "^2.3"
