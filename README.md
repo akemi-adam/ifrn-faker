@@ -96,22 +96,22 @@ $faker->student()->issuedDiploma(); // Exemplo: Sim, Não
 $faker->student()->shift(); // Exemplo: Matutino, Vespertino, Noturno
 ```
 
-Student herda da classe Person e portanto possui seus métodos:
+Student e Teacher herdam da classe Person e portanto possuem seus métodos:
 
 ```php
 <?php
 
 $faker->student()->name() // Retorna um nome brasileiro aleatório (Um alias para a função name() do PHP-Faker)
 
-$faker->student()->name($gender) // Retorna um nome comum normalmente associado ao gênero passado por parâmetro
+$faker->teacher()->name($gender) // Retorna um nome comum normalmente associado ao gênero passado por parâmetro
 
 $faker->student()->gender() // Exemplo: Feminino, Masculino, Não-binário
 
-$faker->student()->schoolEmail() // Exemplo: renata.dutra@escolar.ifrn.edu.br, ariel.f@escolar.ifrn.edu.br, ...
+$faker->teacher()->schoolEmail() // Exemplo: renata.dutra@escolar.ifrn.edu.br, ariel.f@escolar.ifrn.edu.br, ...
 
 $faker->student()->academicEmail() // Exemplo: renata.almeida@academico.ifrn.edu.br, marta.r@academico.ifrn.edu.br, ...
 
-$faker->student()->bloodType() // Exemplo: +O, -AB, +A, ...
+$faker->teacher()->bloodType() // Exemplo: +O, -AB, +A, ...
 
 $faker->student()->telephone() // Retorna um telefone brasileiro
 ```
