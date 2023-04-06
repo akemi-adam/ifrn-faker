@@ -12,11 +12,11 @@
             "email": "90357785+akemi-adam@users.noreply.github.com"
         }
     ],
-    "minimum-stability": "dev",
     "license": "MIT",
     "require": {
         "fakerphp/faker": "^1.21",
-        "php": ">=7.4"
+        "php": ">=7.4",
+        "akemi-adam/ifrn-faker": "^1.0"
     },
     "require-dev": {
         "pestphp/pest": "^2.3"
