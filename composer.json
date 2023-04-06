@@ -12,6 +12,7 @@
             "email": "90357785+akemi-adam@users.noreply.github.com"
         }
     ],
+    "minimum-stability": "stable",
     "license": "MIT",
     "require": {
         "fakerphp/faker": "^1.21",
