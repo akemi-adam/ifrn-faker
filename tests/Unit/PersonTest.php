@@ -4,53 +4,43 @@ use AkemiAdam\IfrnFaker\Faker;
 
 uses()->group('person');
 
-it('returns a random name', function ()
-{
-    $faker = new Faker;
+$faker = new Faker;
 
+it('returns a random name', function () use ($faker)
+{
     expect($faker->student()->name())->toBeString();
 });
 
-it('returns a random gender', function ()
+it('returns a random gender', function () use ($faker)
 {
-    $faker = new Faker;
-
     expect($faker->student()->gender())
         ->toBeString()
         ->toBeIn(['Feminino', 'Masculino', 'Não-binário']);
 });
 
-it('returns a random school email', function ()
+it('returns a random school email', function () use ($faker)
 {
-    $faker = new Faker;
-
     expect($faker->student()->schoolEmail())
         ->toBeString()
         ->toContain('@', 'escolar', '.ifrn.edu.br');
 });
 
-it('returns a random academic email', function ()
+it('returns a random academic email', function () use ($faker)
 {
-    $faker = new Faker;
-
     expect($faker->student()->academicEmail())
         ->toBeString()
         ->toContain('@', 'academico', '.ifrn.edu.br');
 });
 
-it('returns a random blood type with rh factor', function ()
+it('returns a random blood type with rh factor', function () use ($faker)
 {
-    $faker = new Faker;
-
     expect($faker->student()->bloodType())
         ->toBeString()
         ->toBeIn(['A+', 'AB+', 'B+', 'O+', 'A-', 'AB-', 'B-', 'O-']);
 });
 
-it('returns a random telephone', function ()
+it('returns a random telephone', function () use ($faker)
 {
-    $faker = new Faker;
-
     expect($faker->student()->telephone())
         ->toBeString()
         ->toContain('-', '(', ')')

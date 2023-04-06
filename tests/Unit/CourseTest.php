@@ -4,10 +4,10 @@ use AkemiAdam\IfrnFaker\Faker;
 
 uses()->group('course');
 
-it('can return a random integrated course name', function ()
-{
-    $faker = new Faker;
+$faker = new Faker;
 
+it('can return a random integrated course name', function () use ($faker)
+{
     $courses = [
         'Agroecologia', 'Administração', 'Agricultura', 'Agropecuária', 'Alimentos',
         'Apicultura', 'Biocombustíveis', 'Comércio', 'Controle Ambiental', 'Cooperativismo',
@@ -26,10 +26,8 @@ it('can return a random integrated course name', function ()
         ->toBeIn($courses);
 });
 
-it('can return a random subsequent course name', function ()
+it('can return a random subsequent course name', function () use ($faker)
 {
-    $faker = new Faker;
-
     $courses = [
         'Administração', 'Agropecuária', 'Alimentos', 'Apicultura', 'Biocombustíveis',
         'Cooperativismo', 'Comércio', 'Controle Ambiental', 'Edificações', 'Equipamentos Biomédicos',
@@ -48,10 +46,8 @@ it('can return a random subsequent course name', function ()
         ->toBeIn($courses);
 });
 
-it('can return a random code of course with five digits', function ()
+it('can return a random code of course with five digits', function () use ($faker)
 {
-    $faker = new Faker;
-
     expect($faker->course()->code())
         ->toBeString()
         ->toHaveLength(5);
