@@ -22,7 +22,7 @@ $faker = new AkemiAdam\IfrnFaker\Faker;
 
 A patir desse objeto, é possível chamar os outros objetos que de fato contém os dados fictícios:
 
-```
+```php
 <?php
 
 // Instânciando os objetos
@@ -54,7 +54,7 @@ Curso Informática para Internet
 
 Segue a lista com todas as funções que o pacote fornece
 
-```
+```php
 <?php
 
 $faker = new AkemiAdam\IfrnFaker\Faker;
@@ -92,7 +92,7 @@ $faker->student()->shift(); // Exemplo: Matutino, Vespertino, Noturno
 
 Student herda da classe Person e portanto possui seus métodos:
 
-```
+```php
 <?php
 
 $faker->student()->name() // Retorna um nome brasileiro aleatório (Um alias para a função name() do PHP-Faker)
