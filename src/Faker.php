@@ -25,7 +25,7 @@ final class Faker
      */
     public function student() : Student
     {
-        return new Student($this->creator);
+        return new Student($this->creator, new Course($this->creator));
     }
 
     /**
