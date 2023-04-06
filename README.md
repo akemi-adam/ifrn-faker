@@ -14,7 +14,7 @@ Os testes foram construídos em Pest 2, para executá-los, basta usar o comando:
 
 Para começar a utilizar o pacote, basta chamar uma instância do objeto Faker:
 
-```
+```php
 <?php
 
 $faker = new AkemiAdam\IfrnFaker\Faker;
@@ -44,7 +44,7 @@ echo 'Curso' . $course->name();
 
 A saída do código acima seria, respectivamente, algo como:
 
-```
+```shell
 Matrícula 20181101110005
 Campus Caicó
 Curso Informática para Internet
